@@ -1,10 +1,10 @@
-# Very short description of the package
+# Sihq \ Boostrap
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sihq/bootstrap.svg?style=flat-square)](https://packagist.org/packages/sihq/bootstrap)
 [![Total Downloads](https://img.shields.io/packagist/dt/sihq/bootstrap.svg?style=flat-square)](https://packagist.org/packages/sihq/bootstrap)
 ![GitHub Actions](https://github.com/sihq/bootstrap/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Laravel bootstrap setup for Sihq Projects.
 
 ## Installation
 
@@ -17,7 +17,7 @@ composer require sihq/bootstrap
 ## Usage
 
 ```php
-// Usage description here
+    php artisan vendor:publish --tag=init
 ```
 
 ### Testing
