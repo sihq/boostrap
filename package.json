@@ -2,7 +2,10 @@
     "scripts": {
         "lint": "eslint 'resources/**/*.ts'",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "dev": "mix",
+        "watch": "mix watch",
+        "prod": "mix --production"
     },
     "devDependencies": {
         "@babel/preset-react": "^7.16.7",
@@ -22,13 +25,15 @@
         "**/*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
-        "@sihq/reactive": "^1.0.1",
+        "@sihq/reactive": "*",
         "@types/react": "^17.0.38",
         "@types/react-dom": "^17.0.11",
         "axios": "^0.25.0",
+        "laravel-echo": "^1.11.3",
         "laravel-mix": "^6.0.42",
         "laravel-vapor": "^0.5.1",
         "lint-staged": "^12.3.2",
+        "pusher-js": "^7.0.6",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^6.2.1",
