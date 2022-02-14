@@ -7,8 +7,7 @@ import React from 'react';
 
 const Router = (): JSX.Element => {
     const location = useLocation();
-    const { from } = location.state as LocationState;
-
+    const { from } = (location?.state as LocationState) ?? {};
     return (
         <>
             <Routes location={from || location}>
