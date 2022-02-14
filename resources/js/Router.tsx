@@ -12,6 +12,7 @@ const Router = (): JSX.Element => {
         <>
             <Routes location={from || location}>
                 <Route path="/" element={<Base />}>
+                    <Route index element={<E404 />} />
                     <Route path="*" element={<E404 />} />
                 </Route>
             </Routes>
