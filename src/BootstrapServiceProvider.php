@@ -31,8 +31,8 @@ class BootstrapServiceProvider extends ServiceProvider
 
             // Publishing assets.
             $this->publishes([
-                __DIR__.'/../resources' => base_path(),
-                __DIR__.'/../.husky' => base_path(),
+                __DIR__.'/../resources' => base_path('resources'),
+                __DIR__.'/../.husky' => base_path('.husky'),
                 __DIR__.'/../.eslintrc.js' => base_path('.eslintrc.js'),
                 __DIR__.'/../lint-staged.config.js' => base_path('lint-staged.config.js'),
                 __DIR__.'/../.prettierignore' => base_path('.prettierignore'),
