@@ -1,0 +1,53 @@
+{
+    "name": "sihq/bootstrap",
+    "description": "Sihq Laravel Bootstrap",
+    "keywords": [
+        "sihq",
+        "bootstrap"
+    ],
+    "homepage": "https://github.com/sihq/bootstrap",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Brad Martin",
+            "email": "bradley.r.martin@me.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sihq\\Bootstrap\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sihq\\Bootstrap\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sihq\\Bootstrap\\BootstrapServiceProvider"
+            ],
+            "aliases": {
+                "Bootstrap": "Sihq\\Bootstrap\\BootstrapFacade"
+            }
+        }
+    }
+}
