@@ -15,9 +15,9 @@ class BootstrapServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'bootstrap');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'bootstrap');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bootstrap');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadRoutesFrom(__DIR__.'/src/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
