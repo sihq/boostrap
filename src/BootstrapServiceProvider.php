@@ -4,6 +4,10 @@ namespace Sihq\Bootstrap;
 
 use Illuminate\Support\ServiceProvider;
 
+use Sihq\Bootstrap\Rules\PhoneRule;
+use Sihq\Bootstrap\Rules\AddressRule;
+
+
 class BootstrapServiceProvider extends ServiceProvider
 {
     /**
@@ -51,7 +55,12 @@ class BootstrapServiceProvider extends ServiceProvider
 
             // Registering package commands.
             // $this->commands([]);
+
+            
         }
+
+        \Validator::extend("phone", PhoneRule::class);
+        \Validator::extend("address", AddressRule::class);
     }
 
     /**
