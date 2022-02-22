@@ -17,7 +17,7 @@ composer require sihq/bootstrap
 ## Usage
 
 ```php
-    php artisan vendor:publish --tag=init
+    php artisan vendor:publish --force --tag=init
 ```
 
 ### Testing
